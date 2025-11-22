@@ -1,0 +1,98 @@
+@media (width < 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (width < 1080px) {
+  nav .nav-icon {
+    display: block;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+  .close-all {
+    display: none !important;
+  }
+
+  .close-all ~ .nav-icon {
+    display: block !important;
+  }
+
+  .close-all ~ .mobile-menu {
+    translate: 100%;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .open-all {
+    display: none !important;
+  }
+
+  .nav-close:has(~ .open-all) {
+    display: block !important;
+  }
+
+  .open-all ~ .mobile-menu {
+    translate: 0;
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+  }
+}
+
+@media (600px < width < 1000px) {
+  header .hero h1 {
+    padding-top: 20rem;
+    align-self: flex-start;
+    gap: 6rem;
+    width: 95%;
+  }
+}
+
+@media (width < 950px) {
+  html {
+    font-size: 50%;
+  }
+  .button{
+    width: 94%;
+  }
+}
+
+@media (width < 600px) {
+  header .hero {
+    flex-direction: column;
+    padding-top: calc(15vh + 1px);
+  }
+
+  .hero-circle {
+    max-height: 60vh;
+  }
+
+  .hero h1 {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 8rem;
+  }
+
+  h1 .job {
+    direction: ltr;
+  }
+
+  nav .logo-author {
+    font-size: 2rem;
+  }
+
+  .container-input {
+    max-width: 100%;
+  }
+
+  form .user-details .input-field {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
